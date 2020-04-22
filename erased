@@ -1,0 +1,5 @@
+        for line in difflib.context_diff(current, initial):
+            if line.startswith('- '):
+                print(line)
+                checkMessage(line)
+             
